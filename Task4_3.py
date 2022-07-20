@@ -12,7 +12,7 @@ def fill_number_list(n=20, min=10, max=99) -> list:
 def unique_values_list(user_list) -> list:
     new_list = [user_list[0]]
     for i in range(1, len(user_list)):
-        for j in range(0, len(new_list)):
+        for j in range(len(new_list)):
             if user_list[i] == new_list[j]:
                 break
             elif j == len(new_list)-1:
