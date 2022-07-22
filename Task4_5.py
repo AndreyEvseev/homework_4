@@ -19,7 +19,7 @@ polynom2 = r.read_file(my_file2)
 
 p1 = transform_polinom(polynom1, my_file1)
 p2 = transform_polinom(polynom2, my_file2)
-
+print(type(p1))
 import Func_fill_missing_coeff as fm
 tp1 = fm.fill_missing_coeff(p1)
 tp2 = fm.fill_missing_coeff(p2)

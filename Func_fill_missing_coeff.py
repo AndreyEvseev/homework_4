@@ -25,7 +25,7 @@ def degree_list(p: str) -> int:
         ind = len(p)
     return ind
 
-def fill_missing_coeff(p: list):
+def fill_missing_coeff(p: str) -> list:
     n = []
     degree = []
     while len(p) > 0:
