@@ -14,5 +14,5 @@ def call_record_func(k: int, coeff_polinom: list, user_file: str):
 k = int(input('Задайте натуральную степень многочлена k: '))
 import Func_coeff_polinom as cp 
 coeff_polynom = cp.fill_coefficients_polynomial_list(k)
-my_file = 'f_polinom4_4.md'
+my_file = 'f_polinom4_4.txt'
 call_record_func(k, coeff_polynom, my_file)
