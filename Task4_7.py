@@ -6,7 +6,6 @@ import random
 def file_generator(user_file, n: int):
     exception = random.randint(1, N-1)
     min = random.randint(10, 50)
-    print(f'{N = }, {exception = }, {min = }')
     with open(my_file, 'w', encoding='utf-8') as num:
         for i in range(min, min+N+1):
             if i != min+N+1:
@@ -41,7 +40,7 @@ file_generator(my_file, N)
 import Func_read_file as rf
 sequence = rf.read_file(my_file)
 s1 = str_to_int_list(sequence)
-print(s1)
 loss = find_loss(s1)
-print(f'Чтобы выполнялось условие A[i] - 1 = A[i-1], \nв заданной последовательности [{sequence}] не хватает числа {loss}')
+print(f'Чтобы выполнялось условие A[i]-1 = A[i-1], \n'
+    f'в заданной последовательности [ {sequence}] не хватает числа {loss}')
 

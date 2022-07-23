@@ -2,10 +2,11 @@
 # Задача - сформировать файл, содержащий сумму многочленов.
 
 # В этом файле решается задача формирования файла, содержащего сумму многочленов.
-# Создание файлов с исходными многочленами выполняется в файле "Task4_5_1.py"
+# Создание файлов с исходными многочленами выполняется в файле "Task4_5_support.py"
 
 def transform_polinom(user_polynom: str, user_file: str):
     polyn = user_polynom.replace('$', '')
+    polyn = polyn.replace('**', '^')
     polyn = polyn.replace(' ', '')
     polyn = polyn[:-2]
     return polyn
