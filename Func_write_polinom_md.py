@@ -1,4 +1,4 @@
-# Функция для записи полинома в файл Markdown
+# Функция для записи полинома в файл .md
 
 def writing_file_md(k: int, user_list, user_file: str):
     with open(user_file, 'w', encoding='utf-8') as pol:
